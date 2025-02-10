@@ -61,10 +61,7 @@ export default function App() {
         <Routes>
         <Route path="/" element={<Dashboard hiredPeople = {hiredPeople} people ={people} handleEdit={handleEdit} />} />
         <Route path="/personProfile/:id" element={<PersonProfile people={people} handleSubmit = {handleSubmit} />} />
-        <Route
-            path="/edit/:id"
-            element={<EditWage hiredPeople={hiredPeople} handleUpdateWage={handleUpdateWage} />}
-          />
+        <Route path="/edit/:id" element={<EditWage hiredPeople={hiredPeople} handleUpdateWage={handleUpdateWage} />}/>
 
       </Routes>
       </header>
